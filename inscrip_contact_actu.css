@@ -1,0 +1,348 @@
+.inscrip_contact_actu {
+    display: flex;
+    width: 100%;
+    z-index: 999;
+    height: auto;
+    background: rgba(255, 255, 255, 0.8);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-bottom: 100px;
+    opacity: 0;
+    position: relative;
+    padding-top: 20px;
+}
+
+.inscrip_contact_actu > div:not(.arrow_left_inscript) {
+    display: block;
+    max-width: 1000px;
+    margin-left: 50px !important;
+
+}
+
+.inscrip_contact_actu .inscription {
+    display: block;
+    width: 90%;
+    background: #c9c9c9;
+
+}
+
+.inscrip_contact_actu .actu,
+.inscrip_contact_actu .contact {
+    display: block;
+    width: 43%;
+    height: 200px;
+    background: #c9c9c9;
+    position: relative;
+    margin-top: 30px;
+
+}
+
+.inscrip_contact_actu div {
+    margin: 15px;
+}
+
+.inscrip_contact_actu div .title {
+    margin: 0;
+    margin-top: -10px;
+    padding: 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.inscrip_contact_actu div .title {
+    background: #55efc4;
+}
+
+
+.inscrip_contact_actu div:nth-child(2) .title {
+    background: #a29bfe;
+}
+
+.inscrip_contact_actu div:last-child .title {
+    background: #ff7675;
+}
+
+.inscrip_contact_actu .inscription form {}
+
+.inscrip_contact_actu .inscription form .left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.inscrip_contact_actu .inscription form .right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+
+
+.inscrip_contact_actu .inscription form .left input {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 5px 0px;
+    margin-top: 5px;
+}
+
+.inscrip_contact_actu .inscription form .left input::placeholder {
+    display: block;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.inscrip_contact_actu .inscription form .right h3 {
+    display: block;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.inscrip_contact_actu .inscription form .right h3::after {
+    content: '';
+    height: 3px;
+    width: 60%;
+    background: #a29bfe;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    border-radius: 50px;
+
+}
+
+
+.inscrip_contact_actu .inscription form .right .element {
+    display: block;
+    width: 45%;
+}
+
+.inscrip_contact_actu .inscription form .right .element .checkbox {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.inscrip_contact_actu .inscription form .right .element .checkbox input {
+    width: 10%;
+    height: 30px;
+    background: #a29bfe;
+}
+
+.inscrip_contact_actu .inscription form .right .element .checkbox label {
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 60%;
+    text-align: center;
+}
+
+.inscrip_contact_actu .inscription form .right .element .checkbox span {
+    display: block;
+}
+
+.inscrip_contact_actu .inscription form button {
+    background: #a29bfe;
+    border: none;
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: -10px;
+}
+
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+
+/**[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+content: '✔';
+position: absolute;
+top: 0; left: 4px;
+font-size: 14px;
+color: #09ad7e;
+transition: all .2s;
+}**/
+
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+    content: '';
+    position: absolute;
+    top: 4.5px;
+    left: 2px;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #09ad7e;
+    transition: all .2s;
+    background: #a29bfe;
+    border-radius: 3px;
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.inscrip_contact_actu .contact form {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.inscrip_contact_actu .contact form input {
+    width: 90%;
+
+}
+
+.inscrip_contact_actu .contact form input:nth-child(1),
+.inscrip_contact_actu .contact form input:nth-child(2) {
+    width: 45%;
+
+}
+
+.inscrip_contact_actu .contact form input:nth-child(4) {
+    min-height: 50px;
+
+}
+
+.inscrip_contact_actu .contact form button {
+    background: #55efc4;
+    border: none;
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -85px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.inscrip_contact_actu .actu button {
+    background: #ff7675;
+    border: none;
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.inscrip_contact_actu .actu h4 {
+    padding: 10px;
+    text-align: justify;
+    height: 100%;
+    font-size: 15px;
+
+}
+
+.arrow_left_inscript {
+    background: url("next.svg") no-repeat;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    left: 0px;
+    top: 50%;
+    z-index: 1000;
+    transform: translateY(-50%) rotate(180deg);
+    opacity: 1 !important;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+@media (max-width :700px) {
+    .inscrip_contact_actu .inscription form .right .element {
+        display: block;
+        width: 100%;
+    }
+
+    .inscrip_contact_actu .inscription form .right .element .checkbox label {
+        position: relative;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .inscrip_contact_actu > div:not(.arrow_left_inscript) {
+        width: 85% !important;
+        margin-left: 50px;
+
+    }
+
+    .inscrip_contact_actu .actu {
+        margin-top: 50px;
+    }
+}

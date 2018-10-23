@@ -67,7 +67,7 @@
 }
 
 .accueil .contenu button {
-    font-size: 20px;
+    font-size: 18px;
     background: transparent;
     padding: 7px;
     border: 2px solid #565B81;
@@ -174,9 +174,9 @@
 (max-width : 749px),
 (aspect-ratio: 9/16) {
     .rectangle {
-        width: 100%;
-        margin-left: 0vw;
-        transform: skew(30deg);
+        width: 170%;
+        margin-left: -25vw;
+        transform: skew(20deg);
 
     }
 
@@ -194,7 +194,7 @@
     .accueil .contenu {
         right: 50% !important;
         transform: translateX(50%);
-        top: 45% !important;
+        top: 35% !important;
         font-size: 2.5vw;
 
 
