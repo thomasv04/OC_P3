@@ -1,5 +1,7 @@
 $(function () {
 
+    var vid = document.getElementById("video");
+
     /**var count_img = $(".img").length;
 
     for(var i=0;i<count_img;i++){
@@ -44,6 +46,7 @@ $(function () {
         $('header .titre_film').css('display', 'block');
 
 
+
     })
 
     $('.retour').click(function () {
@@ -54,9 +57,10 @@ $(function () {
         $('.img').css('filter', 'none');
         $('.bandeau').css('padding-top', '30px');
         $('.arrow_left').fadeIn(1000);
+        vid.pause();
     })
 
-    var vid = document.getElementById("video");
+
     $('.bouton_play').click(function () {
         $('#video').attr('controls', '');
         $(this).css('display', 'none');
