@@ -135,6 +135,22 @@
 }
 
 .rect1 {
+    background: #64B5F6;
+}
+
+.rect4 {
+    background: #81C784;
+}
+
+.rect3 {
+    background: #FF8A65;
+}
+
+.rect2 {
+    background: #FFEE58;
+}
+
+/**.rect1 {
     background: #99B9FF;
 }
 
@@ -148,7 +164,7 @@
 
 .rect2 {
     background: #B9D8C2;
-}
+}**/
 
 
 

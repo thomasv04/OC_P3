@@ -117,26 +117,30 @@ $(function () {
     });
 
     $('.inscrip_contact_actu').fadeOut(1);
-    $('.arrow_left_inscript').fadeOut(1);
+    $('.cross_inscript').fadeOut(1);
 
 
     $('.button_inscription').click(function () {
-        $('.arrow_left_inscript').fadeIn(1000);
+        $('.cross_inscript').fadeIn(1000);
         $('.inscrip_contact_actu').css("opacity", "1");
         $('.inscrip_contact_actu').fadeIn(1000);
         window.scrollTo(0, 0);
         $('.bandeau').fadeOut(1);
+        //$('.js_body').css("overflow-y", "hidden");
 
     });
 
-    $('.arrow_left_inscript ').click(function () {
-        $('.arrow_left_inscript').fadeOut(1000);
+    $('.cross_inscript ').click(function () {
+        $('.cross_inscript').fadeOut(1000);
         $('.inscrip_contact_actu').css("opacity", "0");
         $('.inscrip_contact_actu').fadeOut(1);
         window.scrollTo(0, 0);
         $('.bandeau').fadeIn(1);
+        //$('.js_body').css("overflow", "auto");
 
     });
+
+
 
 
 
