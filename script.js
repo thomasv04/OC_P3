@@ -35,7 +35,7 @@ $(function () {
         $('.bouton_play').css('display', 'block');
         $('#video').removeAttr('controls');
         $('.titre_film').html(rien).html(information);
-        //$('body').css('overflow', 'hidden');
+        $('body').css('overflow', 'hidden');
         $('.affiche h3').css('margin-bottom', '-25px');
         $('.img').css('filter', 'brightness(100%)');
         $(this).css('filter', 'brightness(50%)');
@@ -57,6 +57,7 @@ $(function () {
         $('.img').css('filter', 'none');
         $('.bandeau').css('padding-top', '30px');
         $('.arrow_left').fadeIn(1000);
+        $('body').css('overflow', 'auto');
         vid.pause();
     })
 
@@ -76,6 +77,19 @@ $(function () {
     vid.onpause = function () {
         $('header .titre_film').css('display', 'block');
     };
+
+
+
+    /**(max-width : 800px),
+    (aspect-ratio: 9/16),(not screen) and (max-height : 800px),
+    (max-height : 800px),
+    (aspect-ratio: 16/9) **/
+
+
+
+
+
+
 
 
 })

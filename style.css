@@ -129,7 +129,7 @@ header .titre_film .date h3 {
 }
 
 .bandeau {
-    display: block;
+    display: flex;
     padding: 30px;
     padding-top: 30px;
     width: 100%;
@@ -137,6 +137,7 @@ header .titre_film .date h3 {
     overflow: auto;
     margin-top: 0vh;
     position: relative;
+
 
 }
 
@@ -162,6 +163,7 @@ header .titre_film .date h3 {
     flex-wrap: wrap;
     width: 85%;
     margin: auto;
+    height: 90vh;
 }
 
 .affiche h3 {

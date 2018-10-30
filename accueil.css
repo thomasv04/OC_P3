@@ -131,6 +131,7 @@
     transform: skew(-30deg);
     display: flex;
 
+    margin-left: -2px;
 }
 
 .rect1 {
