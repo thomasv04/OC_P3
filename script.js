@@ -21,7 +21,7 @@ $(function () {
         var information = $(this).children('.information').clone();
         var rien = " ";
 
-        link_video = "video/" + link_video;
+        //link_video = "video/" + link_video;
         $('.js_header').css('height', '58vh');
         $('.bandeau').css('height', '38vh');
         $('#video').css('display', 'block');

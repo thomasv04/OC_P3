@@ -134,6 +134,42 @@
 }
 
 .rect1 {
+    background: #3098ff;
+}
+
+.rect4 {
+    background: #badcff;
+}
+
+.rect3 {
+    background: #8dc6ff;
+}
+
+.rect2 {
+    background: #5eafff;
+}
+
+/**
+
+vert
+
+.rect1 {
+    background: #30ff58;
+}
+
+.rect4 {
+    background: #ccffd6;
+}
+
+.rect3 {
+    background: #9fffb2;
+}
+
+.rect2 {
+    background: #64ff82;
+}**/
+
+/**.rect1 {
     background: #64B5F6;
 }
 
@@ -147,22 +183,6 @@
 
 .rect2 {
     background: #FFEE58;
-}
-
-/**.rect1 {
-background: #99B9FF;
-}
-
-.rect4 {
-background: #FF7F6B;
-}
-
-.rect3 {
-background: #FFE46B;
-}
-
-.rect2 {
-background: #B9D8C2;
 }**/
 
 
@@ -185,8 +205,8 @@ background: #B9D8C2;
 
 
 
-@media (not screen) and (max-width : 749px),
-(max-width : 749px),
+@media (not screen) and (max-width : 800px),
+(max-width : 800px),
 (aspect-ratio: 9/16) {
     .rectangle {
         width: 170%;
@@ -230,8 +250,8 @@ background: #B9D8C2;
 }
 
 
-@media (not screen) and (max-height : 749px),
-(max-height : 749px),
+@media (not screen) and (max-height : 800px),
+(max-height : 800px),
 (aspect-ratio: 16/9) {
 
     .accueil .contenu {
