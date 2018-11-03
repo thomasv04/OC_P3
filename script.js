@@ -32,8 +32,8 @@ $(function () {
         $('.js_header h1').css('display', 'none');
         $('.js_header .titre_film h1').css('display', 'block');
         $('.js_header .titre_film').css('opacity', '1');
-        $('.bouton_play').css('display', 'block');
-        $('#video').removeAttr('controls');
+        //$('.bouton_play').css('display', 'block');
+        //$('#video').removeAttr('controls');
         $('.titre_film').html(rien).html(information);
         $('body').css('overflow', 'hidden');
         $('.affiche h3').css('margin-bottom', '-25px');
@@ -71,6 +71,7 @@ $(function () {
 
 
     vid.onplay = function () {
+        $('header .titre_film').css('display', 'none');
         $('header .titre_film').css('display', 'none');
     };
 
