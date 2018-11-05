@@ -36,7 +36,7 @@ $(function () {
         //$('#video').removeAttr('controls');
         $('.titre_film').html(rien).html(information);
         $('body').css('overflow', 'hidden');
-        $('.affiche h3').css('margin-bottom', '-25px');
+        $('.affiche h4').css('margin-bottom', '-25px');
         $('.img').css('filter', 'brightness(100%)');
         $(this).css('filter', 'brightness(50%)');
         $('.arrow_left').fadeOut(1000);

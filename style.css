@@ -85,7 +85,7 @@ header .titre_film {
 }
 
 
-header .titre_film h1 {
+header .titre_film h2 {
     display: block;
     position: absolute;
     top: 5%;
@@ -97,28 +97,31 @@ header .titre_film h1 {
     border-radius: 10px;
     transform: none;
     font-size: 50px;
+    color: white;
 }
 
 header .titre_film .date {
     display: block;
     position: absolute;
-    bottom: 16%;
+    bottom: 19%;
     margin-left: 3%;
     left: 0px;
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 10px;
     border-radius: 10px;
+    height: auto;
 
 
-}
-
-header .titre_film .date h2 {
-    margin-bottom: 10px;
-    text-transform: uppercase;
 }
 
 header .titre_film .date h3 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+header .titre_film .date h4 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px !important;
@@ -126,7 +129,12 @@ header .titre_film .date h3 {
     color: #d8d8d8;
     height: auto;
     min-height: 20px;
+    font-size: 20px;
 
+}
+
+.contenu {
+    display: block;
 }
 
 .bandeau {
