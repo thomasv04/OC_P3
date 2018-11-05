@@ -200,7 +200,7 @@ header .titre_film .date h4 {
     align-self: center;
     flex: 0 0 auto;
     margin: 50px;
-    background: red;
+    background: #d3d3d3;
     filter: brightness(100%);
     transition: all 0.5s;
     transition: max-width 3.5s;
