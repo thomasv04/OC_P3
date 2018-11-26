@@ -98,6 +98,7 @@ header .titre_film h2 {
     transform: none;
     font-size: 50px;
     color: white;
+    text-transform: uppercase;
 }
 
 header .titre_film .date {

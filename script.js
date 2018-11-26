@@ -35,9 +35,10 @@ $(function () {
         //$('.bouton_play').css('display', 'block');
         //$('#video').removeAttr('controls');
         $('.titre_film').html(rien).html(information);
-        $('body').css('overflow', 'hidden');
+        //$('body').css('overflow', 'hidden');
         $('.affiche h4').css('margin-bottom', '-25px');
         $('.img').css('filter', 'brightness(100%)');
+        $(this).css('cursor', 'default');
         $(this).css('filter', 'brightness(50%)');
         $('.arrow_left').fadeOut(1000);
         $('.retour').css('display', 'block');
@@ -57,7 +58,7 @@ $(function () {
         $('.img').css('filter', 'none');
         $('.bandeau').css('padding-top', '30px');
         $('.arrow_left').fadeIn(1000);
-        $('body').css('overflow', 'auto');
+        //$('body').css('overflow', 'auto');
         vid.pause();
     })
 
